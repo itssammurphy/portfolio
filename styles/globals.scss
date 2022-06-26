@@ -1,0 +1,58 @@
+@import "./values.scss";
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  color: $white-hex;
+}
+body {
+  background: $black-hex;
+  overflow-x: hidden;
+}
+h1,h2,h3,h4,h5 {
+  font-family: $serif;
+  line-height: 1.2;
+}
+h1 {
+  font-size: min(70px, 8vw);
+  font-weight: 400;
+}
+h2 {
+  font-size: min(60px, 5vw);
+  font-style: italic;
+  font-weight: 600;
+}
+p {
+  font-family: $sans-serif;
+  font-size: min(25px, 3vw);
+  font-weight: 300;
+}
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.sans__override {
+  font-family: $sans-serif;
+}
+
+section {
+  padding: 2rem 4rem;
+  width: 100%;
+  &.one__col {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+
+    .content {
+      width: 65%;
+      text-align: center;
+      p {
+        text-align: justify;
+      }
+    }
+  }
+}

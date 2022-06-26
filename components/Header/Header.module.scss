@@ -1,0 +1,33 @@
+.mainHeader {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+    h1 {
+        font-size: min(120px, 9vw);
+    }
+
+    .col {
+        height: 100%;
+        flex-basis: 50%;
+        max-width: 50%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        .indexHeaderImage {
+            width: 75%;
+        
+            .image {
+                object-fit: contain;
+                width: 100% !important;
+                position: relative !important;
+                height: unset !important;
+            }    
+        }
+    }
+}

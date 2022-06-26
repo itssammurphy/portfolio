@@ -1,0 +1,43 @@
+.navSection {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .inlineNav {
+        display: flex;
+        flex-direction: row;
+        width: 85%;
+        height: 35vh;
+        justify-content: center;
+        align-items: center;
+    
+        .link {
+            margin: 0 1rem;
+    
+            flex-basis: 25%;
+            width: 20%;
+            height: 100%;
+    
+            padding: 1rem;
+    
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-around;
+    
+            .linkSvg {
+                max-width: 100%;
+    
+                img {
+                    object-fit: contain;
+                    max-width: 100%;
+                }
+            }
+            h3 {
+                font-size: min(35px, 2vw);
+                cursor: pointer;
+                position: relative;
+                
+            }
+        }
+    }
+}
