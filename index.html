@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sam Murphy - Web Developer</title>
+
+    <!-- STYLES AND MEDIA QUERIES -->
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
+    <link rel="stylesheet" type="text/css" href="assets/css/medias.css" /> 
+</head>
+<body>
+    <nav id="desktop-nav">
+        <div class="logo">Sam Murphy</div>
+        <div>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+            </ul>
+        </div>
+    </nav>
+    <nav id="hamburger-nav">
+        <div class="logo">Sam Murphy</div>
+        <div class="hamburger-menu">
+            <div class="hamburger-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu-links">
+                <li><a href="#about" onclick="toggleMenu()">About</a></li>
+            </div>
+        </div>
+    </nav>
+
+    <section class="hero">
+        <div class="section__pic-container">
+            <img src="./assets/img/me.jpg" alt="Photo of Samuel Murphy, a web developer from Melbourne, Australia.">
+        </div>
+    </section>
+
+    <script src="assets/js/script.js"></script>
+</body>
+</html>
