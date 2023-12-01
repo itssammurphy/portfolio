@@ -139,6 +139,9 @@ section.alt-section {
     background-color: #793432;
     color: white;
 }
+section.alt-section * {
+    color: white;
+}
 .section__container {
     display: flex;
     width: 60%;
