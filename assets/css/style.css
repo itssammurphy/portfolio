@@ -8,9 +8,14 @@
 }
 html {
     scroll-behavior: smooth;
+    font-size: 18px;
+}
+body {
+    background-color: #d9f3ff;
 }
 p {
-    color: rgb(85,85,85);
+    color: #21374e;
+    line-height: 1.5rem;
 }
 
 /* TRANSITION */
@@ -19,13 +24,18 @@ a, .btn {
 }
 
 /* DESKTOP NAV */
-nav, .nav-links {
+nav, .nav-content, .nav-links {
     display: flex;
 }
 nav {
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
     height: 18vh;
+    width: 100vw;
+}
+.nav-content {
+    width: 60%;
+    justify-content: space-between;
 }
 .nav-links {
     gap: 2rem;
@@ -113,38 +123,70 @@ a:hover {
 /* SECTIONS */
 section {
     padding-top: 4vh;
-    height: 96vh;
-    margin: 0 10rem;
     min-height: fit-content;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 5rem 0;
+}
+section>h1 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+section.alt-section {
+    background-color: #793432;
+    color: white;
 }
 .section__container {
     display: flex;
+    width: 60%;
+    gap: 5rem;
 }
 .hero {
-    display: flex;
-    justify-content: center;
-    gap: 5rem;
-    height: 80vh;
+    height: 70vh;
 }
 .section__pic-container {
     display: flex;
-    height: 400px;
-    width: 400px;
+    height: 31vw;
+    width: 31vw;
     margin: auto 0;
 }
 .section__text {
+    flex-grow: 1;
     align-self: center;
-    text-align: center;
-}
-.section__text p {
-    font-weight: 600;
+    text-align: right;
 }
 .section__text-p1 {
-    text-align: center;
     font-size: 1.75rem;
-    margin-bottom: 0.5rem;
+}
+.section__text-p2 {
+    font-size: 1.5rem;
+    margin-top: 0.5rem;
+    margin-bottom: 1rem;
+    font-weight: 800;
+    font-style: italic;
+    color: #793432;
 }
 .hero__title {
-    font-size: 3rem;
-    text-align: center;
+    font-size: 4rem;
+    text-align: right;
+    color: #21374e;
+}
+.section__text-main {
+    text-align: justify;
+    margin-bottom: 1rem;
+}
+button.btn {
+    padding: 0.5rem 1rem;
+    border: none;
+    outline: none;
+    background-color: #793432;
+    color: white;
+    font-size: 1.25rem;
+}
+button.btn:hover {
+    background-color: white;
+    color: #793432;
 }

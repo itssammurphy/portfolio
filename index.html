@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
     <title>Sam Murphy - Web Developer</title>
 
     <!-- STYLES AND MEDIA QUERIES -->
@@ -11,11 +11,14 @@
 </head>
 <body>
     <nav id="desktop-nav">
-        <div class="logo">Sam Murphy</div>
-        <div>
-            <ul class="nav-links">
-                <li><a href="#about">About</a></li>
-            </ul>
+        <div class="nav-content">
+            <div class="logo">Sam Murphy</div>
+            <div>
+                <ul class="nav-links">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#portfolio">My Stuff</a></li>
+                </ul>
+            </div>
         </div>
     </nav>
     <nav id="hamburger-nav">
@@ -28,20 +31,46 @@
             </div>
             <div class="menu-links">
                 <li><a href="#about" onclick="toggleMenu()">About</a></li>
+                <li><a href="#portfolio" onclick="toggleMenu()">My Stuff</a></li>
             </div>
         </div>
     </nav>
 
     <section class="hero">
-        <div class="section__pic-container">
-            <img src="./assets/img/me.png" alt="Photo of Samuel Murphy, a web developer from Melbourne, Australia.">
+        <div class="section__container">
+            <div class="section__pic-container">
+                <img src="./assets/img/me.png" alt="Photo of Samuel Murphy, a web developer from Melbourne, Australia.">
+            </div>
+            <div class="section__text">
+                <p class="section__text-p1">Hello, I am</p>
+                <h1 class="hero__title">Sam Murphy</h1>
+                <p class="section__text-p2">Web Developer & AI Engineer</p>
+                <p class="section__text-main">I am a confident, young, self-taught web developer with a passion for learning and growth. I am incredibly eager to leverage my education, skills, and passionate interest in technology to contribute towards the ongoing success of high-performing organisations, and remain committed to my continuous improvement in both my technical and interpersonal capacities.</p>
+                <div class="btn__container">
+                    <button class="btn btn-color-2" onclick="location.href='./#contact'">Reach out</button>
+                </div>
+            </div>
         </div>
-        <div class="section__text">
-            <p class="section__text-p1">Hello, I am</p>
-            <h1 class="hero__title">Sam Murphy</h1>
-            <p class="section__text-p2">Web Developer</p>
-            <div class="btn__container">
-                <button class="btn btn-color-2" onclick="location.href='./#contact'">Reach out</button>
+    </section>
+
+    <section id="about">
+        <h1>About Me, in Brief</h1>
+        <div class="section__container">
+            <p>
+                Hey there, I'm Sam.<br /><br />
+                I love everything related to computers, and have been dedicated to learning everything I can about software and it's development since the age of 9. I learnt Python when I was in year 3 at school, and continued to use the language on an almost daily basis to solve problems. Maths has also been one of my favourite areas of study throughout my entire school life, which has presented unique opportunities to solve complex mathematical problems I encounter, with software.<br /><br />
+                Although writing quick, elegant solutions to problems is always great fun, there is nothing that gives me the same sense of reward as completing a long-running project to a high standard. In 2019 I, along with my friend from school, developed an organisation tool for students, which we ultimately discontinued due to growing school commitments of our own (I know, quite ironic), but I am incredibly excited to bring back this app in an updated and improved fashion in 2024. Watch this space!<br /><br />
+                Feel free to take a look around and see some of the cool stuff I've been up to or have planned.<br /><br />
+                Cheers, Sam
+            </p>
+        </div>
+    </section>
+
+    <section class="alt-section" id="portfolio">
+        <h1>My Stuff</h1>
+        <div class="grid__section">
+            <div class="tile">
+                
             </div>
         </div>
     </section>
