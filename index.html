@@ -22,16 +22,18 @@
         </div>
     </nav>
     <nav id="hamburger-nav">
-        <div class="logo">Sam Murphy</div>
-        <div class="hamburger-menu">
-            <div class="hamburger-icon" onclick="toggleMenu()">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
-            <div class="menu-links">
-                <li><a href="#about" onclick="toggleMenu()">About</a></li>
-                <li><a href="#portfolio" onclick="toggleMenu()">My Stuff</a></li>
+        <div class="nav-content">
+            <div class="logo">Sam Murphy</div>
+            <div class="hamburger-menu">
+                <div class="hamburger-icon" onclick="toggleMenu()">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <div class="menu-links">
+                    <li><a href="#about" onclick="toggleMenu()">About</a></li>
+                    <li><a href="#portfolio" onclick="toggleMenu()">My Stuff</a></li>
+                </div>
             </div>
         </div>
     </nav>
@@ -68,17 +70,22 @@
 
     <section class="alt-section" id="portfolio">
         <h1>My Stuff</h1>
-        <div class="grid__section">
-            <div class="tile">
-                <div class="tile__img">
-
-                </div>
-                <div class="tile__content">
-                    <h2>Murphy Digital</h2>
-                    <p>I founded an AI Automation Agency in 2023, which seeks to help businesses implement emerging AI technologies to improve their operations.</p>
+        <div class="section__container">
+            <div class="grid__section">
+                <div class="tile">
+                    <div class="tile__img">
+                        <img src="assets/img/white multiline.png" alt="Murphy Digital logo, an AI Automation Agency from Melbourne"/>
+                    </div>
+                    <div class="tile__content">
+                        <h2>Murphy Digital</h2>
+                        <p>I founded an AI Automation Agency in 2023, which seeks to help businesses implement emerging AI technologies to improve their operations.</p><br />
+                        
+                    </div>
+                    <a href="murphydigital.html" class="grid__btn">Read more</a>
                 </div>
             </div>
         </div>
+        
     </section>
 
     <script src="assets/js/script.js"></script>
