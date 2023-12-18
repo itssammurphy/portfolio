@@ -29,4 +29,13 @@
         width: 45vw;
         height: 45vw;
     }
+
+    .grid__wrapper a {
+        width: 100%;
+        margin: 1rem 0;
+    }
+
+    #portfolio .section__container {
+        width: 90%;
+    }
 }
