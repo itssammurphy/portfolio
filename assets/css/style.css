@@ -202,40 +202,44 @@ button.btn:hover {
     background-color: white;
     color: #793432;
 }
-.grid__section {
-    max-width: 100%;
-    display: grid;
-    gap: 2rem;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    padding: 2rem 0 2rem 0;
+.grid__wrapper {
+    font-size: 0;
+    width: 100%;
 }
-.grid__section .tile {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: flex-start;
-    max-width: 100%;
+.grid__wrapper a {
+    display: inline-block;
+    width: 50%;
+    height: 40vh;
+    position: relative;
+}
+.grid__wrapper a img {
     height: 100%;
+    width: 100%;
+    object-fit: cover;
 }
-.grid__section .tile img {
-    max-width: 100%;
-    flex: 1 50%;
+.grid__wrapper a::before,
+.grid__wrapper a::after {
+    width: 100%;
+    position: absolute;
+    opacity: 0;
+    transition: opacity 350ms ease-in-out;
 }
-.tile__content {
-    flex-grow: 1;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: flex-start;
+.grid__wrapper a::before {
+    content: '';
+    height: 100%;
+    background: rgba(121, 52, 50, 0.7);
 }
-a.grid__btn {
-    background-color: white;
-    color: #793432;
-    padding: .25rem .5rem;
-    margin: 1rem 0;
-    align-self: flex-start;
-    transform-origin: left top;
+.grid__wrapper a::after {
+    content: attr(data-title);
+    font-size: 24px;
+    top: calc(50% - 0.5em);
+    left: 0;
+    text-align: center;
+    color: white;
+    text-transform: uppercase;
+    font-weight: 800;
 }
-a.grid__btn:hover {
-    transform: scale(1.1);
+.grid__wrapper a:hover::before,
+.grid__wrapper a:hover::after {
+    opacity: 1;
 }
