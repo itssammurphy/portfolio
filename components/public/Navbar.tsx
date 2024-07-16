@@ -17,8 +17,8 @@ const Navbar = () => {
         });
     }, []);
     return (
-        <nav className="bg-black w-full h-auto lg:h-[50px] flex flex-col items-center justify-center my-24">
-            <div className="w-full grid grid-rows-2 grid-cols-2 md:grid-cols-5 lg:flex lg:flex-row lg:items-center lg:justify-between lg:w-3/5 py-2 px-4 md:py-4 lg:px-16">
+        <nav className="bg-black w-full h-auto lg:h-[50px] flex flex-col items-center justify-center my-4 lg:my-24">
+            <div className="w-full grid grid-rows-2 grid-cols-2 md:grid-cols-5 lg:gap-x-4 lg:flex lg:flex-row lg:items-center lg:justify-between lg:w-3/5 py-2 px-4 md:py-4 lg:px-16">
                 <div className="w-full lg:w-1/12 col-start-1 row-start-1 text-left flex flex-row items-center justify-start">
                     <Link
                         href="/"

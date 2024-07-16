@@ -70,7 +70,7 @@ const AwayFromCoding = () => {
     };
 
     return (
-        <section className="w-3/5 px-16 py-8 flex flex-col items-start justify-start font-mono">
+        <section className="w-full px-4 lg:w-3/5 lg:px-16 py-2 lg:py-8 flex flex-col items-start justify-start font-mono">
             <h1 className="border-l-2 border-white pl-4 text-2xl my-4">
                 Away from VS Code
             </h1>

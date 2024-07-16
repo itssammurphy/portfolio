@@ -4,7 +4,7 @@ import PostCount from "./PostCount";
 
 const Hero = () => {
     return (
-        <section className="w-3/5 px-16 flex items-center justify-center">
+        <section className="w-full lg:w-3/5 px-4 lg:px-16 flex items-center justify-center">
             <div className="w-full flex flex-col items-center justify-normal">
                 <div className="relative w-full h-[300px]">
                     <Image
