@@ -50,24 +50,24 @@ const Navbar = () => {
                             </div>
                             <div className="hidden md:block w-1/3">
                                 <Marquee
-                                    play={result.title.length > 32}
+                                    play={result.title.length > 24}
                                     style={{ width: "100%" }}
                                     speed={30}
                                 >
                                     <a
                                         href={result.songUrl}
                                         target="_blank"
-                                        className=""
+                                        className="mr-16"
                                     >
                                         {result.title}
                                     </a>
                                 </Marquee>
                                 <Marquee
-                                    play={result.artist.length > 32}
+                                    play={result.artist.length > 24}
                                     speed={20}
                                     style={{ width: "100%" }}
                                 >
-                                    <p className="">{result.artist}</p>
+                                    <p className="mr-16">{result.artist}</p>
                                 </Marquee>
                             </div>
                         </div>
