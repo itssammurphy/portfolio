@@ -1,6 +1,7 @@
 "use client";
+import { FaGithub, FaLinkedin } from "react-icons/fa";
 import Image from "next/image";
-import PostCount from "./PostCount";
+import Link from "next/link";
 
 const Hero = () => {
     return (
@@ -25,6 +26,24 @@ const Hero = () => {
                     Studying Applied Mathematics at the University of Melbourne,
                     Parkville
                 </p>
+                <div className="flex flex-row items-center justify-between w-[100px] mt-4">
+                    <Link
+                        target="_blank"
+                        href="https://www.linkedin.com/in/sam-murphy-8772b0283/"
+                        className="text-white hover:text-gray-400 transition-colors ease-in-out"
+                    >
+                        <FaLinkedin size={30} />
+                    </Link>
+                    <Link
+                        target="_blank"
+                        href="https://github.com/itssammurphy"
+                    >
+                        <FaGithub
+                            className="text-white hover:text-gray-400 transition-colors ease-in-out"
+                            size={30}
+                        />
+                    </Link>
+                </div>
             </div>
         </section>
     );
