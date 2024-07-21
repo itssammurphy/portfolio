@@ -41,34 +41,36 @@ const Navbar = () => {
                                 <PlayingAnimation />
                                 <p className="text-[#1ed760]">Now Listening</p>
                             </div>
-                            <div className="hidden md:block md:w-1/6">
+                            <div className="hidden md:flex md:flex-row md:w-1/3">
                                 <img
                                     src={result.albumImageUrl}
                                     alt={`${result.title} album art`}
-                                    className="w-full lg:w-[50px]"
+                                    className="w-[50px]"
                                 />
-                            </div>
-                            <div className="hidden md:block w-1/3">
-                                <Marquee
-                                    play={result.title.length > 24}
-                                    style={{ width: "100%" }}
-                                    speed={30}
-                                >
-                                    <a
-                                        href={result.songUrl}
-                                        target="_blank"
-                                        className="mr-16"
+                                <div className="ml-2 w-2/3 xl:w-3/4">
+                                    <Marquee
+                                        play={result.title.length > 10}
+                                        style={{ width: "100%" }}
+                                        speed={30}
                                     >
-                                        {result.title}
-                                    </a>
-                                </Marquee>
-                                <Marquee
-                                    play={result.artist.length > 24}
-                                    speed={20}
-                                    style={{ width: "100%" }}
-                                >
-                                    <p className="mr-16">{result.artist}</p>
-                                </Marquee>
+                                        <a
+                                            href={result.songUrl}
+                                            target="_blank"
+                                            className="mr-16 text-lg"
+                                        >
+                                            {result.title}
+                                        </a>
+                                    </Marquee>
+                                    <Marquee
+                                        play={result.artist.length > 17}
+                                        speed={20}
+                                        style={{ width: "100%" }}
+                                    >
+                                        <p className="mr-16 text-xs">
+                                            {result.artist}
+                                        </p>
+                                    </Marquee>
+                                </div>
                             </div>
                         </div>
                     )}
