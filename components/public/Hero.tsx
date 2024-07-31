@@ -15,7 +15,7 @@ const Hero = () => {
                         objectFit="contain"
                     />
                 </div>
-                <h1 className="my-4 text-3xl font-mono font-bold">
+                <h1 className="my-4 text-3xl font-mono font-bold text-white">
                     Hi, I&apos;m Sam;
                 </h1>
                 <p className="text-gray-300 text-wrap max-w-full font-mono font-light text-xl leading-relaxed text-center">

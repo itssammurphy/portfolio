@@ -30,7 +30,7 @@ export default function RootLayout({
                     rel="stylesheet"
                 ></link>
             </head>
-            <body className={`${inter.className} bg-black text-white`}>
+            <body className={`${inter.className} bg-black`}>
                 <Navbar />
                 <main className="bg-black w-full flex-col flex items-center justify-normal">
                     {children}

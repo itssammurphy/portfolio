@@ -34,7 +34,7 @@ const Post = ({ params }: { params: { slug: string } }) => {
 
     return post ? (
         <article className="font-mono w-3/5 px-16 pb-16">
-            <h1 className="text-4xl font-bold mb-4">{post.title}</h1>
+            <h1 className="text-4xl font-bold mb-4 text-white">{post.title}</h1>
             <h2 className="font-semibold text-2xl text-gray-400">
                 {new Date(post.publishedAt)
                     .toLocaleString("en-GB")

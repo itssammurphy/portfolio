@@ -22,7 +22,7 @@ const Navbar = () => {
                 <div className="w-full lg:w-1/12 col-start-1 row-start-1 text-left flex flex-row items-center justify-start">
                     <Link
                         href="/"
-                        className="text-2xl font-mono hover:text-blue-500 transition-colors ease-in-out"
+                        className="text-2xl font-mono text-white hover:text-blue-500 transition-colors ease-in-out"
                     >
                         S.M.
                     </Link>
@@ -78,7 +78,7 @@ const Navbar = () => {
                 <div className="col-start-2 md:col-start-5 row-start-1 w-full lg:w-1/12 flex flex-row items-center justify-end">
                     <Link
                         href="/blog"
-                        className="text-xl hover:text-blue-500 transition-colors ease-in-out font-mono"
+                        className="text-xl text-white hover:text-blue-500 transition-colors ease-in-out font-mono"
                     >
                         Blog
                     </Link>

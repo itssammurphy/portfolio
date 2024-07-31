@@ -66,12 +66,18 @@ const AwayFromCoding = () => {
                 grade: "First Class Honours",
                 className: BREADTH_CLASSNAME,
             },
+            {
+                name: "Myth, Art, and Empire: Greece and Rome ANCW10002",
+                filters: ["all", "breadth"],
+                grade: "Currently Completing",
+                className: BREADTH_CLASSNAME,
+            },
         ],
     };
 
     return (
         <section className="w-full px-4 lg:w-3/5 lg:px-16 py-2 lg:py-8 flex flex-col items-start justify-start font-mono">
-            <h1 className="border-l-2 border-white pl-4 text-2xl my-4">
+            <h1 className="border-l-2 border-white pl-4 text-2xl my-4 text-white">
                 Away from VS Code
             </h1>
             <div className="border-l-2 border-gray-400 text-gray-400 pl-4 mb-8">

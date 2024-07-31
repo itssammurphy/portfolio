@@ -3,15 +3,16 @@ import React from "react";
 const About = () => {
     return (
         <section className="w-full lg:w-3/5 px-4 lg:px-16 py-2 lg:py-8 flex flex-col items-start justify-start font-mono">
-            <h1 className="border-l-2 border-white pl-4 text-2xl my-4">
+            <h1 className="border-l-2 border-white pl-4 text-2xl my-4 text-white">
                 About me
             </h1>
             <p className="text-lg leading-relaxed text-gray-300">
-                I'm an 18 year-old mathematics student and self-taught
+                I&apos;m an 18 year-old mathematics student and self-taught
                 full-stack developer from Melbourne, Australia. I wrote my first
-                line of Python at 9 years old, and ever since I've been hooked!
-                For me, programming has opened up new avenues and approaches to
-                solving problems, which is a process I have always enjoyed.
+                line of Python at 9 years old, and ever since I&apos;ve been
+                hooked! For me, programming has opened up new avenues and
+                approaches to solving problems, which is a process I have always
+                enjoyed.
                 <br />
                 <br />
                 I currently have a few really cool projects in the pipeline, so
