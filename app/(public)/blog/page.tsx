@@ -22,7 +22,7 @@ const Blog = async () => {
     );
 
     return (
-        <section className="w-3/5 px-16 font-mono">
+        <section className="w-full lg:w-3/5 px-4 lg:px-16 font-mono">
             <Suspense fallback={<p>Loading feed...</p>}>
                 {posts.length > 0 ? (
                     posts.map((post: any, index: number) => (
