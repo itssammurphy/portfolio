@@ -1,29 +1,14 @@
 import CodeBlock from "@/components/public/CodeBlock";
 import { getImageDimensions } from "@sanity/asset-utils";
 import urlBuilder from "@sanity/image-url";
+import imageUrlBuilder from "@sanity/image-url";
+import { SanityClient } from "./sanityClient";
 
-const SampleImageComponent = ({ value, isInline }: any) => {
-    const { width, height } = getImageDimensions(value);
-    return (
-        <img
-            src={urlBuilder()
-                .image(value)
-                .width(isInline ? 100 : 800)
-                .fit("max")
-                .auto("format")
-                .url()}
-            alt={value.alt || " "}
-            loading="lazy"
-            style={{
-                // Display alongside text if image appears inside a block text span
-                display: isInline ? "inline-block" : "block",
+const builder = imageUrlBuilder(SanityClient);
 
-                // Avoid jumping around with aspect-ratio CSS property
-                aspectRatio: width / height,
-            }}
-        />
-    );
-};
+function urlFor(source: string) {
+    return builder.image(source);
+}
 
 const PORTABLE_TEXT_COMPONENTS = {
     block: {
@@ -51,7 +36,15 @@ const PORTABLE_TEXT_COMPONENTS = {
             </blockquote>
         ),
         normal: ({ children }: any) => (
-            <p className="text-white tracking-wider">{children}</p>
+            <p
+                style={{
+                    color: "white",
+                    lineHeight: "2",
+                    marginBottom: "2rem",
+                }}
+            >
+                {children}
+            </p>
         ),
     },
     list: {
@@ -83,7 +76,28 @@ const PORTABLE_TEXT_COMPONENTS = {
         ),
     },
     types: {
-        image: SampleImageComponent,
+        image: ({ value, isInline }: any) => {
+            const { width, height } = getImageDimensions(value);
+            return (
+                <img
+                    src={urlFor(value)
+                        .image(value)
+                        .width(isInline ? 100 : 800)
+                        .fit("max")
+                        .auto("format")
+                        .url()}
+                    alt={value.alt || " "}
+                    loading="lazy"
+                    style={{
+                        // Display alongside text if image appears inside a block text span
+                        display: isInline ? "inline-block" : "block",
+                        marginTop: "2rem",
+                        marginBottom: "2rem",
+                        alignSelf: "center",
+                    }}
+                />
+            );
+        },
         code: CodeBlock,
     },
 };
