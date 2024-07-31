@@ -1,3 +1,4 @@
+import CodeBlock from "@/components/public/CodeBlock";
 import { getImageDimensions } from "@sanity/asset-utils";
 import urlBuilder from "@sanity/image-url";
 
@@ -83,6 +84,7 @@ const PORTABLE_TEXT_COMPONENTS = {
     },
     types: {
         image: SampleImageComponent,
+        code: CodeBlock,
     },
 };
 
