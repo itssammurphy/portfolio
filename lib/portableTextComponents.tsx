@@ -49,15 +49,39 @@ const PORTABLE_TEXT_COMPONENTS = {
     },
     list: {
         bullet: ({ children }: any) => (
-            <ul className="list-disc list-inside my-2">{children}</ul>
+            <ul
+                style={{
+                    listStyle: "disc",
+                    listStylePosition: "inside",
+                    marginTop: "1rem",
+                    marginBottom: "1rem",
+                }}
+                className="list-disc list-inside my-2"
+            >
+                {children}
+            </ul>
         ),
         number: ({ children }: any) => (
-            <ol className="list-decimal list-inside my-2">{children}</ol>
+            <ol
+                style={{
+                    listStyle: "decimal",
+                    listStylePosition: "inside",
+                    marginTop: "1rem",
+                    marginBottom: "1rem",
+                }}
+                className="list-decimal list-inside my-2"
+            >
+                {children}
+            </ol>
         ),
     },
     listItem: {
-        bullet: ({ children }: any) => <li className="my-1">{children}</li>,
-        number: ({ children }: any) => <li className="my-1">{children}</li>,
+        bullet: ({ children }: any) => (
+            <li className="text-white list-disc my-4">{children}</li>
+        ),
+        number: ({ children }: any) => (
+            <li className="my-4 text-white">{children}</li>
+        ),
     },
     marks: {
         strong: ({ children }: any) => (
