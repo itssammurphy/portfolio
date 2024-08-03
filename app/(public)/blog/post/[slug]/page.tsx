@@ -40,7 +40,11 @@ const Post = ({ params }: { params: { slug: string } }) => {
                     .toLocaleString("en-GB")
                     .slice(0, 17)}
             </h2>
-            <img src={post.mainImage.asset.url} className="w-full my-4" />
+            <img
+                src={post.mainImage.asset.url}
+                alt={`Image associated with ${post.title}, a blog post by Samuel Murphy, a software engineer from Melbourne, Australia`}
+                className="w-full my-4"
+            />
             <PortableText
                 value={post.body}
                 components={PORTABLE_TEXT_COMPONENTS}

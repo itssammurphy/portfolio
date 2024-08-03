@@ -49,6 +49,7 @@ const Blog = async () => {
                             <img
                                 className="w-1/4"
                                 src={post.mainImage.asset.url}
+                                alt="Image associated with the most recent blog post by Sam Murphy, a software engineer from Melbourne, Australia"
                             />
                         </div>
                     ))

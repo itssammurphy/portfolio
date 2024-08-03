@@ -42,11 +42,13 @@ const Road = () => {
             {post && (
                 <>
                     <b>Latest instalment:</b>
-                    <div className="w-full text-black bg-white p-4 mt-2 h-60 flex flex-row gap-x-2">
+                    <div className="w-full text-black bg-white p-4 mt-2 min-h-60 flex flex-row gap-x-2">
                         <div className="w-1/2 h-full flex flex-col items-start justify-between">
                             <div>
                                 <h2 className="text-4xl font-bold uppercase">
-                                    {post.title}
+                                    {post.title.length > 45
+                                        ? post.title.substr(0, 45) + "\u2026"
+                                        : post.title}
                                 </h2>
                                 <h3 className="text-lg text-gray-500 mb-16">
                                     {new Date(post.publishedAt)
@@ -64,7 +66,8 @@ const Road = () => {
                         <div className="w-1/2 flex items-center justify-end">
                             <img
                                 src={post.mainImage.asset.url}
-                                className="h-full w-auto my-4"
+                                className="h-full w-full object-cover object-center my-4"
+                                alt="Post associated with the latest instalment of Sam Murphy's Road to Software Engineering"
                             />
                         </div>
                     </div>
