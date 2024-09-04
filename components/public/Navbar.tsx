@@ -56,7 +56,7 @@ const Navbar = () => {
                                         <a
                                             href={result.songUrl}
                                             target="_blank"
-                                            className="mr-16 text-lg"
+                                            className="mr-16 text-lg text-white"
                                         >
                                             {result.title}
                                         </a>
@@ -66,7 +66,7 @@ const Navbar = () => {
                                         speed={20}
                                         style={{ width: "100%" }}
                                     >
-                                        <p className="mr-16 text-xs">
+                                        <p className="mr-16 text-xs text-white">
                                             {result.artist}
                                         </p>
                                     </Marquee>

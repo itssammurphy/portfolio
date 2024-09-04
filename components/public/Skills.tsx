@@ -8,17 +8,17 @@ const Skills = () => {
             </h1>
             <ul className="flex flex-row flex-wrap gap-x-8 text-lg text-gray-300">
                 <li>python</li>
-                <li>html</li>
-                <li>css</li>
                 <li>typescript</li>
                 <li>javascript</li>
                 <li>reactjs</li>
                 <li>nextjs</li>
-                <li>node</li>
                 <li>git</li>
                 <li>postgresql</li>
                 <li>mysql</li>
+                <li>REST</li>
                 <li>matlab</li>
+                <li>tensorflow</li>
+                <li>docker</li>
             </ul>
         </section>
     );
