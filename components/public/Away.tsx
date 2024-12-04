@@ -39,13 +39,13 @@ const AwayFromCoding = () => {
             {
                 name: "Linear Algebra MAST10007",
                 filters: ["all", "maths"],
-                grade: "Currently Completing",
+                grade: "First Class Honours",
                 className: MATHS_CLASSNAME,
             },
             {
                 name: "Data Analysis MAST10010",
                 filters: ["all", "maths"],
-                grade: "Currently Completing",
+                grade: "First Class Honours",
                 className: MATHS_CLASSNAME,
             },
             {
@@ -57,7 +57,7 @@ const AwayFromCoding = () => {
             {
                 name: "Foundations of Algorithms COMP10002",
                 filters: ["all", "comp"],
-                grade: "Currently Completing",
+                grade: "First Class Honours",
                 className: COMP_CLASSNAME,
             },
             {
@@ -69,7 +69,7 @@ const AwayFromCoding = () => {
             {
                 name: "Myth, Art, and Empire: Greece and Rome ANCW10002",
                 filters: ["all", "breadth"],
-                grade: "Currently Completing",
+                grade: "First Class Honours",
                 className: BREADTH_CLASSNAME,
             },
         ],
