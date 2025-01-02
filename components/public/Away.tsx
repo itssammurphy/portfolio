@@ -73,34 +73,39 @@ const AwayFromCoding = () => {
                 className: BREADTH_CLASSNAME,
             },
         ],
+        2025: [
+            {
+                name: "Real Analysis: Advanced MAST20033",
+                filters: ["all", "maths"],
+                grade: "Currently Completing",
+                className: MATHS_CLASSNAME,
+            },
+            {
+                name: "Vector Calculus MAST20009",
+                filters: ["all", "maths"],
+                grade: "Currently Completing",
+                className: MATHS_CLASSNAME,
+            },
+            {
+                name: "Design of Algorithms COMP20007",
+                filters: ["all", "comp"],
+                grade: "Currently Completing",
+                className: COMP_CLASSNAME,
+            },
+            {
+                name: "The French Revolution HIST20068",
+                filters: ["all", "breadth"],
+                grade: "Currently Completing",
+                className: BREADTH_CLASSNAME,
+            },
+        ],
     };
 
     return (
         <section className="w-full px-4 lg:w-3/5 lg:px-16 py-2 lg:py-8 flex flex-col items-start justify-start font-mono">
             <h1 className="border-l-2 border-white pl-4 text-2xl my-4 text-white">
-                Away from VS Code
+                Away from VS Code - Uni
             </h1>
-            <div className="border-l-2 border-gray-400 text-gray-400 pl-4 mb-8">
-                <h2 className="text-xl font-semibold">Sport</h2>
-                <p className="font-light">
-                    Sport has always been an important extracurricular to me. At
-                    the moment, I play cricket and golf, but have also
-                    previously played competitive tennis. Recently I have also
-                    been more regularly going to the gym, which has been helping
-                    me build self-confidence, as well as improve my overall
-                    fitness and strength for the sports I primarily play.
-                    <br />
-                    <br />
-                    Last golf round: 86
-                    <br />
-                    Current handicap: 14.3
-                    <br />
-                    <br />
-                    Current bench press 1RM: 60kg
-                    <br />
-                    2km PB: 07:51 (08:37 avg)
-                </p>
-            </div>
             <div className="border-l-2 border-gray-400 text-gray-400 pl-4 mb-8">
                 <h2 className="text-xl font-semibold">Uni</h2>
                 <p className="font-light">
@@ -129,13 +134,25 @@ const AwayFromCoding = () => {
                     >
                         breadth track
                     </span>{" "}
-                    focused primarily on Linguistics.
+                    which constitutes of history and linguistics subjects.
                     <br />
                     <br />
                 </p>
                 <b>2024 Subjects:</b>
-                <ul>
+                <ul className="mb-4">
                     {subjects["2024"].map((subject: Subject, index: number) => {
+                        if (subject.filters.includes(filter)) {
+                            return (
+                                <li key={index} className={subject.className}>
+                                    {subject.name} - {subject.grade}
+                                </li>
+                            );
+                        }
+                    })}
+                </ul>
+                <b>2025 Subjects:</b>
+                <ul>
+                    {subjects["2025"].map((subject: Subject, index: number) => {
                         if (subject.filters.includes(filter)) {
                             return (
                                 <li key={index} className={subject.className}>

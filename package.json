@@ -20,7 +20,7 @@
     "clsx": "^2.1.1",
     "easymde": "^2.18.0",
     "lucide-react": "^0.408.0",
-    "next": "14.2.5",
+    "next": "^14.2.22",
     "next-sanity": "^9.4.2",
     "node-emoji": "^2.1.3",
     "querystring": "^0.2.1",
