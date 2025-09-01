@@ -9,6 +9,12 @@ const Work = () => {
             </h1>
             <div className="w-full grid grid-cols-1 xl:grid-cols-2 gap-8">
                 <WorkCard
+                    name="Exotic Options Pricer"
+                    description="A Monte Carlo simulation framework to price vanilla and exotic options of a single underlying asset via discounted expected payoffs on simulated Geometric Brownian Motion asset price paths."
+                    url="https://github.com/itssammurphy/Monte-Carlo-Pricing"
+                    image="/projects/exotics.png"
+                />
+                <WorkCard
                     name="The Autism Site"
                     description="A network for Support Workers, Behaviour Support Assistants, and Therapy Assistants to find work and connect with autistic people. Built with NextJS, Postgres, and using CI/CD principles."
                     url="https://www.theautismsite.com.au/"
